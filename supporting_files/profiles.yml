@@ -1,4 +1,4 @@
-rvijaysubs-snowflake-db:
+engwed-snowflake-db:
   target: dev
   outputs:
     dev:

@@ -4,9 +4,9 @@ on: pull_request
 
 env:
   DBT_PROFILE_TARGET:            test
-  DBT_PROFILE_SNOWFLAKE_ACCOUNT: st25556.us-east-2.aws
-  DBT_PROFILE_USER:              rvijaysubs
-  DBT_PROFILE_PASSWORD:          CLOB2goog0yir!ziw
+  DBT_PROFILE_SNOWFLAKE_ACCOUNT: ${{ secrets.DBT_PROFILE_SNOWFLAKE_ACCOUNT }}
+  DBT_PROFILE_USER:              ${{ secrets.DBT_PROFILE_PROD_USER }}
+  DBT_PROFILE_PASSWORD:          ${{ secrets.DBT_PROFILE_PROD_PASSWORD }}
   DBT_PROFILE_ROLE:              SYSADMIN
   DBT_PROFILE_DB:                JAFFLE_SHOP
   DBT_PROFILE_WH:                COMPUTE_WH
