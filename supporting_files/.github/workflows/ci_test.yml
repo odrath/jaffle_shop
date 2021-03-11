@@ -12,7 +12,7 @@ env:
   DBT_PROFILE_WH:                TRANSFORMING
 
 jobs:
-  prod:
+  test:
     runs-on: ubuntu-latest
 
     steps:
