@@ -7,9 +7,9 @@ env:
   DBT_PROFILE_SNOWFLAKE_ACCOUNT: ${{ secrets.DBT_PROFILE_SNOWFLAKE_ACCOUNT }}
   DBT_PROFILE_USER:              ${{ secrets.DBT_PROFILE_PROD_USER }}
   DBT_PROFILE_PASSWORD:          ${{ secrets.DBT_PROFILE_PROD_PASSWORD }}
-  DBT_PROFILE_ROLE:              SYSADMIN
-  DBT_PROFILE_DB:                JAFFLE_SHOP
-  DBT_PROFILE_WH:                COMPUTE_WH
+  DBT_PROFILE_ROLE:              TRANSFORMER
+  DBT_PROFILE_DB:                JAFFLE_SHOP_TEST
+  DBT_PROFILE_WH:                TRANSFORMING
 
 jobs:
   prod:
